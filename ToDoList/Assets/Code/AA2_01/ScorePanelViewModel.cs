@@ -1,6 +1,5 @@
 using UniRx;
 
-
 public class ScorePanelViewModel 
 {
     public readonly ReactiveProperty<bool> IsVisible;

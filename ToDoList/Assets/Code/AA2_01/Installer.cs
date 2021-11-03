@@ -11,7 +11,6 @@ public class Installer : MonoBehaviour
     [SerializeField] private ScorePanelView _scorePanelPrefab;
     [SerializeField] private SettingsPanelView _settingsPanelPrefab;
 
-    // Start is called before the first frame update
     void Awake()
     {
         var homePanelView = Instantiate(_homePanelPrefab, _CanvasParent);

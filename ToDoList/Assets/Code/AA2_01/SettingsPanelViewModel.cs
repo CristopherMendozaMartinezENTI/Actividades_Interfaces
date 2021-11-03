@@ -1,6 +1,5 @@
 using UniRx;
 
-
 public class SettingsPanelViewModel
 {
     public readonly ReactiveProperty<bool> IsVisible;
