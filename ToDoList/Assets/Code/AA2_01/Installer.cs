@@ -14,17 +14,17 @@ public class Installer : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        var settingPanelView = Instantiate(_settingsPanelPrefab, _CanvasParent);
-        var scorePanelView = Instantiate(_scorePanelPrefab, _CanvasParent);
         var homePanelView = Instantiate(_homePanelPrefab, _CanvasParent);
-        var buttonsPanel = Instantiate(_menuPanelPrefab, _CanvasParent);
+        var scorePanelView = Instantiate(_scorePanelPrefab, _CanvasParent);
+        var settingPanelView = Instantiate(_settingsPanelPrefab, _CanvasParent);
+        var menuPanel = Instantiate(_menuPanelPrefab, _CanvasParent);
 
         var menuPanelViewModel = new MenuPanelViewModel();
         var homePanelViewModel = new HomePanelViewModel();
         var scorePanelViewModel = new ScorePanelViewModel();
         var settingsPanelViewModel = new SettingsPanelViewModel();
 
-        buttonsPanel.SetViewModel(menuPanelViewModel);
+        menuPanel.SetViewModel(menuPanelViewModel);
         homePanelView.SetViewModel(homePanelViewModel);
         scorePanelView.SetViewModel(scorePanelViewModel);
         settingPanelView.SetViewModel(settingsPanelViewModel);
