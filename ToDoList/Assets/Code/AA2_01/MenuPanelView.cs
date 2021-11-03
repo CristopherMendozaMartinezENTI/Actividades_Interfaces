@@ -23,13 +23,16 @@ public class MenuPanelView : MonoBehaviour
 
         _homeButton.onClick.AddListener(() => {
             _viewModel.HomeButtonPressed.Execute();
-            Debug.Log("Click on Home");
         }
         );
 
         _scoreButton.onClick.AddListener(() => {
             _viewModel.ScoreButtonPressed.Execute();
-            Debug.Log("Click on Score");
+        }
+        );
+
+        _settingsButton.onClick.AddListener(() => {
+            _viewModel.SettingsButtonPressed.Execute();
         }
       );
     }
