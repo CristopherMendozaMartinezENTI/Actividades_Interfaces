@@ -237,6 +237,9 @@ MonoBehaviour:
   _homeCanvasParent: {fileID: 1131228798754423989, guid: a9bc737bdb2e7b540979f4794009c213, type: 3}
   _scoreCanvasParent: {fileID: 3475630959161676050, guid: a292e3577ff9e5a47b343da5f759dd7d, type: 3}
   _settingCanvasParent: {fileID: 9211151578939355947, guid: 6e287e9e2c6fcd94cb87394bf78ed566, type: 3}
+  _menuPanelPrefab: {fileID: 6248896362830456076, guid: e6a620c9f28ea0547a3474487f251fec, type: 3}
+  _homePanelPrefab: {fileID: 4786687923518958773, guid: a9bc737bdb2e7b540979f4794009c213, type: 3}
+  _scorePanelPrefab: {fileID: 2871673370947443568, guid: a292e3577ff9e5a47b343da5f759dd7d, type: 3}
 --- !u!1 &1389163896
 GameObject:
   m_ObjectHideFlags: 0

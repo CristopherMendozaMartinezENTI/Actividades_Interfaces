@@ -294,13 +294,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1131228798754423989}
   - component: {fileID: 5643493138473027490}
+  - component: {fileID: 4786687923518958773}
   m_Layer: 5
   m_Name: HomeCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1131228798754423989
 RectTransform:
   m_ObjectHideFlags: 0
@@ -331,3 +332,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131228798754423988}
   m_CullTransparentMesh: 1
+--- !u!114 &4786687923518958773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131228798754423988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d70f094e933e7d341b251b4d519d5e34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

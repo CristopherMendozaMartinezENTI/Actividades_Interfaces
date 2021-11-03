@@ -331,6 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8323395195659086972}
   - component: {fileID: 7094191313604601903}
+  - component: {fileID: 6248896362830456076}
   m_Layer: 5
   m_Name: ButtonCanvas
   m_TagString: Untagged
@@ -368,6 +369,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8323395195659086968}
   m_CullTransparentMesh: 1
+--- !u!114 &6248896362830456076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8323395195659086968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcc017fb10c35c4baae4f4b190ef2b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _homeContainer: {fileID: 1131228798754423989, guid: a9bc737bdb2e7b540979f4794009c213, type: 3}
+  _scoreContainer: {fileID: 3475630959161676050, guid: a292e3577ff9e5a47b343da5f759dd7d, type: 3}
+  _settingsContainer: {fileID: 9211151578939355947, guid: 6e287e9e2c6fcd94cb87394bf78ed566, type: 3}
+  _homeButton: {fileID: 8323395196508771999}
+  _scoreButton: {fileID: 8323395195409061896}
+  _settingsButton: {fileID: 8323395194458889310}
 --- !u!1 &8323395196015746081
 GameObject:
   m_ObjectHideFlags: 0
