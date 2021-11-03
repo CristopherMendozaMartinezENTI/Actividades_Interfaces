@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UniRx;
+using DG.Tweening;
 
 public class HomePanelView : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class HomePanelView : MonoBehaviour
             .IsVisible
             .Subscribe((isVisible) => {
                 gameObject.SetActive(isVisible);
+                gameObject.transform.DOShakePosition(1.5f, 10.0f);
             });
     }
 }

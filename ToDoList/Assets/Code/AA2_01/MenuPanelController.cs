@@ -16,24 +16,30 @@ public class MenuPanelController
         _settingsPanelViewModel = settingsPanelViewModel;
 
         _menuPanelViewModel
-            .HomeButtonPressed
-            .Subscribe((_) =>
-            {
-                _homePanelViewModel.IsVisible.Value = true;
-            });
+        .HomeButtonPressed
+        .Subscribe((_) =>
+        {
+            _homePanelViewModel.IsVisible.Value = true;
+            _scorePanelViewModel.IsVisible.Value = false;
+            _settingsPanelViewModel.IsVisible.Value = false;
+        });
 
         _menuPanelViewModel
          .ScoreButtonPressed
          .Subscribe((_) =>
          {
+             _homePanelViewModel.IsVisible.Value = false;
              _scorePanelViewModel.IsVisible.Value = true;
+             _settingsPanelViewModel.IsVisible.Value = false;
          });
 
-       _menuPanelViewModel
-      .SettingsButtonPressed
-      .Subscribe((_) =>
-      {
-          _settingsPanelViewModel.IsVisible.Value = true;
-      });
+        _menuPanelViewModel
+        .SettingsButtonPressed
+        .Subscribe((_) =>
+        {
+            _homePanelViewModel.IsVisible.Value = false;
+            _scorePanelViewModel.IsVisible.Value = false;
+            _settingsPanelViewModel.IsVisible.Value = true;
+        });
     }
 }

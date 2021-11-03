@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UniRx;
+using DG.Tweening;
 
 public class ScorePanelView : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class ScorePanelView : MonoBehaviour
             .IsVisible
             .Subscribe((isVisible) => {
                 gameObject.SetActive(isVisible);
+                gameObject.transform.DOShakePosition(1.5f, 10.0f);
             });
     }
 }
