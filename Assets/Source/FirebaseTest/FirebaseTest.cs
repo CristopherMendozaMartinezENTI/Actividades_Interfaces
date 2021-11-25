@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Main : MonoBehaviour
+public class FirebaseTest : MonoBehaviour
 {
     private Firebase.FirebaseApp app;
     // Start is called before the first frame update
