@@ -1,12 +1,10 @@
-using System;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UniRx;
+using TMPro;
 
 public class ProfileView : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _userName;
+    [SerializeField] private TextMeshProUGUI _userId;
     private ProfileViewModel _model;
 
     public void Configure(ProfileViewModel model)
@@ -14,7 +12,7 @@ public class ProfileView : MonoBehaviour
         _model = model;
 
         _model
-            .UserName
-            .Subscribe(userName => _userName.SetText(userName));
+            .UserId
+            .Subscribe(userName => _userId.SetText(userName));
     }
 }

@@ -1,10 +1,9 @@
-
 public class UserData
 {
-    public readonly string Name;
+    public readonly string Id;
 
-    public UserData(string name)
+    public UserData(string id)
     {
-        Name = name;
+        Id = id;
     }
 }

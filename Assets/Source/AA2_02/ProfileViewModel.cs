@@ -2,10 +2,10 @@ using UniRx;
 
 public class ProfileViewModel
 {
-    public readonly ReactiveProperty<string> UserName;
+    public readonly ReactiveProperty<string> UserId;
 
     public ProfileViewModel()
     {
-        UserName = new StringReactiveProperty();
+        UserId = new StringReactiveProperty();
     }
 }

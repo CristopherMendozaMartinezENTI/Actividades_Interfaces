@@ -1,6 +1,3 @@
-using System;
-using System.Threading.Tasks;
-
 public class LoginUseCase : LoginRequester
 {
     public void Login()

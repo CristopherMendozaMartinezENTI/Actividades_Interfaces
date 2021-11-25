@@ -1,5 +1,3 @@
-using System;
-
 public class MainMenuPresenter
 {
     private readonly MainMenuViewModel _model;

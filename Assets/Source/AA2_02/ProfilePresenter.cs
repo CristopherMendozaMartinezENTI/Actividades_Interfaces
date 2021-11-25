@@ -4,13 +4,12 @@ public class ProfilePresenter
 
     public ProfilePresenter(ProfileViewModel model)
     {
-        _model = model;
-            
+        _model = model; 
         EventDispatcherService.Instance.Subscribe<UserData>(OnUserDateUpdated);
     }
         
     private void OnUserDateUpdated(UserData data)
     {
-        _model.UserName.Value = data.Name;
+        _model.UserId.Value = data.Id;
     }
 }
