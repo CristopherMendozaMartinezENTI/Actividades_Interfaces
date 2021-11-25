@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "777736285784",
+    "project_id": "fir-prova-a0c67",
+    "storage_bucket": "fir-prova-a0c67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777736285784:android:d428d696f05881a402e42d",
+        "android_client_info": {
+          "package_name": "com.company.firebaseProva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777736285784-8hntcv7dsakna9un0vjjkuqb6kqt3lb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbMW5_XGa6-43YdGRzltDK6WnnpE4Xcmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777736285784-8hntcv7dsakna9un0vjjkuqb6kqt3lb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
