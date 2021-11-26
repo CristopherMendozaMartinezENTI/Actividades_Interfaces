@@ -1,8 +1,9 @@
 using UnityEngine;
 using UniRx;
 using TMPro;
+using System.Collections.Generic;
 
-public class ProfileView : MonoBehaviour
+public class ProfileView : View
 {
     [SerializeField] private TextMeshProUGUI _userId;
     private ProfileViewModel _model;

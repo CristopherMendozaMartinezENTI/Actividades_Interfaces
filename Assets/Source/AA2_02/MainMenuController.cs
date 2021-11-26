@@ -1,6 +1,8 @@
 using UniRx;
+using System;
+using System.Collections.Generic;
 
-public class MainMenuController
+public class MainMenuController : Controller
 {
     private readonly MainMenuViewModel _model;
     private readonly LoginRequest _loginRequester;
@@ -10,7 +12,8 @@ public class MainMenuController
         _model = model;
         _loginRequester = loginRequester;
 
-        _model.LoginButtonPressed.Subscribe(OnLoginButtonPressed);
+        _model.LoginButtonPressed.Subscribe(OnLoginButtonPressed)
+        .AddTo(_disposables);
     }
 
     private void OnLoginButtonPressed(Unit _)

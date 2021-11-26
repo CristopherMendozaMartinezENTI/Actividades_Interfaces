@@ -1,4 +1,7 @@
-public class MainMenuPresenter
+using System;
+using System.Collections.Generic;
+
+public class MainMenuPresenter : IDisposable
 {
     private readonly MainMenuViewModel _model;
 
