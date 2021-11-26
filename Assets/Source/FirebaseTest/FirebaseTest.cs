@@ -26,7 +26,7 @@ public class FirebaseTest : MonoBehaviour
         });
     }
     
-    void Login()
+    public void Login()
     {
       Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
       auth.SignInAnonymouslyAsync().ContinueWith(task => {

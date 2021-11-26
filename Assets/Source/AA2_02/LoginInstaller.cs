@@ -4,6 +4,7 @@ public class LoginInstaller : MonoBehaviour
 {
     [SerializeField] private MainMenuView _mainMenuView;
     [SerializeField] private ProfileView _profileView;
+    private FirebaseLoginService firebaseService;
         
     private void Awake()
     {
@@ -11,7 +12,7 @@ public class LoginInstaller : MonoBehaviour
         _mainMenuView.Configure(mainMenuViewModel);
         var profileViewModel = new ProfileViewModel();
         _profileView.Configure(profileViewModel);
-        var loginUseCase = new LoginUseCase();
+        var loginUseCase = new LoginUseCase(firebaseService);
         var mainMenuPresenter = new MainMenuPresenter(mainMenuViewModel);
         var mainMenuController = new MainMenuController(mainMenuViewModel, loginUseCase);
         new ProfilePresenter(profileViewModel);

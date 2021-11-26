@@ -3,9 +3,9 @@ using UniRx;
 public class MainMenuController
 {
     private readonly MainMenuViewModel _model;
-    private readonly LoginRequester _loginRequester;
+    private readonly LoginRequest _loginRequester;
 
-    public MainMenuController(MainMenuViewModel model, LoginRequester loginRequester)
+    public MainMenuController(MainMenuViewModel model, LoginRequest loginRequester)
     {
         _model = model;
         _loginRequester = loginRequester;
