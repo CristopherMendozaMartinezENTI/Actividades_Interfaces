@@ -4,7 +4,7 @@ public class LoginInstaller : MonoBehaviour
 {
     [SerializeField] private MainMenuView _mainMenuView;
     [SerializeField] private ProfileView _profileView;
-    private FirebaseLoginService firebaseService;
+    [SerializeField] private FirebaseLoginService firebaseService;
         
     private void Awake()
     {

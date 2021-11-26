@@ -6,9 +6,9 @@ public class FirebaseLoginService : MonoBehaviour
 {
     //Nos conectamos a Firebase.
     private Firebase.FirebaseApp app;
-    private Firebase.Auth.FirebaseUser newUser;
+    public Firebase.Auth.FirebaseUser newUser;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
             var dependencyStatus = task.Result;
@@ -30,7 +30,7 @@ public class FirebaseLoginService : MonoBehaviour
         });
     }
 
-    public void Login()
+    public void SignUp()
     {
         Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
         auth.SignInAnonymouslyAsync().ContinueWith(task => {

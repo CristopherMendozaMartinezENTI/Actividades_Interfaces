@@ -14,10 +14,8 @@ public class LoginUseCase : LoginRequest
 
     public void Login()
     {
-        //firebaseLoginService.Login();
-
-        var userData = new UserData("Kris");
-
+        firebaseLoginService.SignUp();
+        var userData = new UserData("UserID");
         EventDispatcherService.Instance.Dispatch(userData);
     }
 }
