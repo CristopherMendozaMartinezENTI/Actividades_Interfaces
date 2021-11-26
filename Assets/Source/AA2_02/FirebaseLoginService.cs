@@ -6,7 +6,7 @@ public class FirebaseLoginService : MonoBehaviour
 {
     //Nos conectamos a Firebase.
     private Firebase.FirebaseApp app;
-    public Firebase.Auth.FirebaseUser newUser;
+    private Firebase.Auth.FirebaseUser newUser;
     // Start is called before the first frame update
     private void Start()
     {
@@ -46,8 +46,8 @@ public class FirebaseLoginService : MonoBehaviour
             }
 
             newUser = task.Result;
-            Debug.LogFormat("User signed in successfully: {0} ({1})",
-              newUser.DisplayName, newUser.UserId);
+            Debug.LogFormat("User signed in successfully: {0}", newUser.UserId);
+            PlayerPrefs.SetString("UserId", task.Result.UserId);
         });
     }
 }

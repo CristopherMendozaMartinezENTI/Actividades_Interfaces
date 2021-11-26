@@ -1,4 +1,5 @@
+using System.Threading.Tasks;
 public interface LoginRequest
 {
-    void Login();
+    public Task Login();
 }

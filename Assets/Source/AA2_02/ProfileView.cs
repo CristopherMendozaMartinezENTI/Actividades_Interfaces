@@ -14,6 +14,6 @@ public class ProfileView : View
 
         _model
             .UserId
-            .Subscribe(userName => _userId.SetText(userName));
+            .Subscribe(userId => _userId.SetText(userId));
     }
 }
