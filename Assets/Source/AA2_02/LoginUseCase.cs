@@ -20,7 +20,7 @@ public class LoginUseCase : LoginRequest
         firebaseLoginService.SignUp();
         //Espero 2 segundos. Utilizo Task porque al no ser Monobehaviour no puedo utilizar una coroutine.
         await Task.Delay(TimeSpan.FromSeconds(1));
-        var userData = new UserData(PlayerPrefs.GetString("UserId"));
+        var userData = new UserData("User");
         EventDispatcherService.Instance.Dispatch(userData);
     }
 }

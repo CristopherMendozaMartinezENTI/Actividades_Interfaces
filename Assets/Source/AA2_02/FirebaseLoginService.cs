@@ -47,7 +47,7 @@ public class FirebaseLoginService : MonoBehaviour
 
             newUser = task.Result;
             Debug.LogFormat("User signed in successfully: {0}", newUser.UserId);
-            PlayerPrefs.SetString("UserId", task.Result.UserId);
+            PlayerPrefs.SetString("UserId", newUser.UserId);
         });
     }
 }
